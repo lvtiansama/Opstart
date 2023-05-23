@@ -1,6 +1,11 @@
-# Opstart v1.0
+# Opstart v1.1
 
 基于原神的整蛊程序
+
+
+## 版本更新内容
+
+本版本仅针对`win`版本，修复了bat文件指定错误的问题
 
 ## 重要通知
 
@@ -47,8 +52,8 @@ Opstart_v1.0_win
 
 倘如计算机本地没有卷名为`D:\`的磁盘，快捷方式将无法正常运行，你可以尝试将`安装.bat`修改如下：
 ```
-xcopy %~dp0opsetup C:\opsetup /E /I /Y
-powershell -Command "$s=(New-Object -ComObject WScript.Shell).CreateShortcut('%userprofile%\Desktop\原神.lnk');$s.TargetPath='C:\opsetup\yuanshen.exe';$s.Save()"
+xcopy %~dp0Opstart C:\Opstart /E /I /Y
+powershell -Command "$s=(New-Object -ComObject WScript.Shell).CreateShortcut('%userprofile%\Desktop\原神.lnk');$s.TargetPath='C:\Opstart\yuanshen.exe';$s.Save()"
 ```
 **注意：请保证`opsetup.wav`位于与`yuanshen.exe`同目录下，否则后抛出错误**
 
